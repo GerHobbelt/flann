@@ -103,13 +103,13 @@ FLANN_EXPORT void flann_set_distance_type(enum flann_distance_t distance_type, i
 /**
  * Gets the distance type in use throughout FLANN.
  */
-FLANN_EXPORT enum flann_distance_t flann_get_distance_type();
+FLANN_EXPORT enum flann_distance_t flann_get_distance_type(void);
 
 /**
  * Gets the distance order in use throughout FLANN (only applicable if minkowski distance
  * is in use).
  */
-FLANN_EXPORT int flann_get_distance_order();
+FLANN_EXPORT int flann_get_distance_order(void);
 
 /**
    Builds and returns an index. It uses autotuning if the target_precision field of index_params
